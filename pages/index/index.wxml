@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- BANNER -->
+  <view class="banner-section">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+      <block wx:for="{{bannerList}}" wx:key="{{key}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 热销 -->
+  <view class="hot-section">
+    <view class="hs-title">热销</view>
+    <view class="hs-group">
+      <view wx:for="{{homeData.hotList}}" class="{{index % 2 == 0 ? 'hs-wrap hs-wrap-left' : 'hs-wrap hs-wrap-right'}}" wx:key="{{index}}">
+        <view wx:if="index % 2 == 0" class="hs-item hs-left">
+          {{item.name}}
+        </view>
+        <view wx:else class="hs-item hs-right">
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

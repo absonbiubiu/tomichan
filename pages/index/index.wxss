@@ -1,0 +1,40 @@
+/**index.wxss**/
+.banner-section {
+  width: 100%;
+  height: 300rpx;
+  margin-bottom: 20rpx;
+}
+.banner-section swiper {
+  height: 100%;
+  width: 100%;
+}
+.banner-section swiper image {
+  height: 100%;
+  width: 100%;
+}
+.hot-section {
+  color: #fff;
+  background-color: #ffdbed;
+  padding: 20rpx 0;
+}
+.hot-section .hs-title {
+  font-size: 32rpx;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.hot-section .hs-group {
+  padding: 0 10rpx;
+}
+.hot-section .hs-wrap {
+  margin-bottom: 20rpx;
+}
+.hot-section .hs-wrap-left {
+  padding-right: 60rpx;
+}
+.hot-section .hs-wrap-right {
+  padding-left: 60rpx;
+}
+.hot-section .hs-item {
+  border: 2px solid #fff;
+  padding: 10rpx;
+}
